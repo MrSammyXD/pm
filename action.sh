@@ -1,4 +1,4 @@
-git clone https://github.com/MrSammyXD/GitGram /root/innexia
+git clone https://github.com/MrSammyXD/GitGram /root/gitgram
 cp gitgram/.env /root/gitgram
 cd /root/gitgram
 docker build . --rm --force-rm --compress --pull --file Dockerfile -t gitgram
