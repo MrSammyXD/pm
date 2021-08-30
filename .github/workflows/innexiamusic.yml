@@ -1,4 +1,4 @@
-name: Innexia Music Workflows
+name: gitgram Workflows
 
 on:
     push:
@@ -29,9 +29,9 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} innexiamusic
+           git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} gitgram
 
-       - name: Running Innexia Music
+       - name: Running gitgram
          timeout-minutes: 359
          continue-on-error: true
          run: |
